@@ -1,0 +1,73 @@
+<html>
+<head>
+	<title>MOMMY :3</title>
+	<style>
+	.box{
+		border:5px groove black;
+		padding:15px;
+	}
+	#title{
+		font-size:4em;
+		font-style:"Arial";
+		text-decoration:underline;
+		text-decoration-style:wavy;
+		text-decoration-color:rgb(211, 211, 211);
+	}
+	.btn{
+		display:none
+	}
+	button{
+		background-color:rgb(211, 211, 211);
+		color:white;
+		border-radius:25px;
+		transition:all 0.5s;
+	}
+	button:hover{
+		background-color:black;
+	}
+	body{
+		background: linear-gradient(white, black);
+        background-repeat: no-repeat;
+        background-attachment:fixed ;
+	}pre{
+		font-size:2em;
+	}
+	</style>
+</head>
+<body><div class="box">
+	<h1 id="title"><i>Hello :3<i></h1>
+	<pre id="str">Hi momy aka crazed, This is a uhhh, lil game ig :3
+I'm gonna ask u a few questions, dw u'll get options :3 and be brutally honest
+Click <button onclick="start()" style="font-size:1em;">HERE</button> when ur ready :D </pre>
+<button class="btn" id = "btn" onclick="wrong()"></button>
+<button class="btn" id = "btn3" onclick="correct()"></button>
+<button class="btn" id = "btn2" onclick="wrong()"></button></div>
+	<script>
+		function start(){
+			document.getElementById("str").innerHTML ="Q1 : Who do u like more";
+			document.getElementById("btn").style.display="inline";
+			document.getElementById("btn2").style.display="inline";
+			document.getElementById("btn3").style.display="inline";
+			document.getElementById("btn").innerHTML ="Cerri and Potato, i mean poteytuuuu ;D";
+			document.getElementById("btn2").innerHTML ="Jithu and Mario";
+			document.getElementById("btn3").innerHTML ="Chatty :D";
+		}
+		function wrong(){
+			document.getElementById("str").innerHTML ="ANS : WRONG, I HATE U MOMMY<br> SCORE : 0/10";
+			document.getElementById("btn").style.display="none";
+			document.getElementById("btn2").style.display="none";
+			document.getElementById("btn3").style.display="none";
+			window.alert("WRONG, I HATE U MOMMY");
+			document.getElementById("title").innerHTML ="Hello >:("
+		}
+		function correct(){
+			document.getElementById("str").innerHTML ="ANS : CORRECT, I LOVE U MOMMY<br> SCORE : 10/10";
+			document.getElementById("btn").style.display="none";
+			document.getElementById("btn2").style.display="none";
+			document.getElementById("btn3").style.display="none";
+			window.alert("CORRECT, I LOVE U MOMMY");
+			document.getElementById("title").innerHTML ="Hello :D";
+		} 
+	</script>
+</body>
+</html>
